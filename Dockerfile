@@ -1,9 +1,12 @@
 FROM alpine as base
-RUN apk add --no-cache git
+
 WORKDIR /git
+
+RUN apk add --no-cache git
 RUN git clone https://github.com/outline/outline.git
 
 FROM node:14-alpine
+
 LABEL author="Dương Đức Nam <nampt1999@gmail.com>"
 
 EXPOSE 80
