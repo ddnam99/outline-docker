@@ -13,7 +13,7 @@
     - SLACK_KEY (this is called "Client ID" in Slack admin)
     - SLACK_SECRET (this is called "Client Secret" in Slack admin)
 4. Configure your Slack app's Oauth & Permissions settings
-    - Add http://localhost:3000/auth/slack.callback as an Oauth redirect URL
+    - Add http://${URL}/auth/slack.callback as an Oauth redirect URL
     - Ensure that the bot token scope contains at least users:read
 #### Requires the following dependencies:
     - Docker
